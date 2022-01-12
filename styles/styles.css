@@ -8,14 +8,16 @@ body {
 }
 main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container {
-  width: 870px;
+  width: 895px;
   background: #ffffff;
   border-radius: 5px;
   padding: 30px;
+  margin-bottom: 20px;
 }
 
 .section_title {
@@ -84,4 +86,46 @@ hr {
 .blog_author a {
   text-decoration: none;
   color: #562eff;
+}
+
+/* latest section styles  */
+
+.courses_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px;
+}
+.course {
+  width: 253px;
+  padding: 15px;
+  /* border: 1px solid purple; */
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px lightgray;
+}
+.course_banner img {
+  width: 100%;
+}
+
+.course_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fa-star {
+  font-size: 12px;
+}
+
+.filed {
+  color: #ffc014;
+}
+.empty {
+  color: #aeaeae;
+  opacity: 0.25;
+}
+.course_derution {
+  font-size: 14px;
+  color: #ff4a60;
+  padding: 3px 6px;
+  background: #b4878cd0;
+  border-radius: 15px;
 }
